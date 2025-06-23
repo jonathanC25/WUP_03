@@ -28,15 +28,16 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
-  based off the box plot the median as i see it is higher than both of people who sit in the back consume the most alcohol than the third quartile of both people front and middle. We know this because of the box plot and the data it shows. 
-  
+  Based off the box plot the median of people who sit in the back as I see it is higher than both the third quartile of people who sit in the front and the third quartile those who sit in the middle.
 ### get fancy  
 
+## Numerical Summarys 
+
 ```{r}
-basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
+favstats(alcohol~Seat,data=ucdavis1)
 ```
 
-## Numerical Summarys 
+The third quantile od the front is 2 and the third quantile of the middle is 3. The median of the back is 4 so in this case the median of the back is higher than the third auantile of both the front and middle.
 
 ## Inferential Tests
 
