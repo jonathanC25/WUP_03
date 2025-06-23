@@ -28,7 +28,7 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
-  based off the box plot people who sit in the back consume the most alchol 
+  based off the box plot the median as i see it is higher than both of people who sit in the back consume the most alcohol than the third quartile of both people front and middle. We know this because of the box plot and the data it shows. 
   
 ### get fancy  
 
